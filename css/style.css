@@ -1,0 +1,140 @@
+html{
+    font-size: 16px;
+}
+
+body *, ::before, ::after{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 400;
+    background-color: white;
+    color: black;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgb(189, 186, 186);
+    color: rgb(10, 10, 10);
+    text-align: center;
+}
+.footerflex{
+    min-height: 100vh; 
+    position: relative;
+    padding-bottom: 60px; 
+    box-sizing: border-box;
+}
+header{
+    background-color:black;
+    color: white;
+    border-bottom: solid 3px cyan;
+    font-family: 'HGP行書体';
+}
+h2{
+    text-align: center;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+}
+@media(min-width: 768px){
+    .container{
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 30px;
+    }
+}
+
+main {
+    flex: 1;
+    min-height: calc(100% - 156px);
+}
+main .container {
+    display: table;
+    margin: 0 auto;
+    background-color: #fff;
+    font-size: 0;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+#nav{
+    position: fixed;
+    right: -270px;
+    top: 0;
+    width: 270px;
+    height: 100%;
+}
+
+.show{
+    transform: translate3d(-270px, 0, 0);
+}
+
+#wrapper, nav{
+    transition: transform 0.3s;
+}
+.header{
+    padding: 16px 0;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    flex: 1 1 auto;
+}
+.hamburger{
+    flex: 0 0 32px;
+    align-self: center;
+    margin-left: 16px;
+    text-align: center;
+    color: black;
+}
+/*装飾*/
+#nav{
+    padding: 0 24px 0 24px;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+#nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#nav li a{
+    display: block;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid cyan;
+    color: white;
+}
+#nav li a:hover{
+    background: rgba(0, 255, 255, 0.5);
+}
+#nav .menu{
+    margin-bottom: 20px;
+}
+.image{
+    align-self: center;
+    text-align: center;
+    margin-left: 18px;
+    width: 45vw;
+    height: 25vw;
+}
+.contents{
+    width: 48%;
+    margin: 5px;
+    flex: 1;
+    display: inline-block;
+    display: table-cell;
+    
+}
