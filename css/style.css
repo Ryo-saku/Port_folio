@@ -37,6 +37,7 @@ header{
 }
 h2{
     text-align: center;
+    font-family: 'HG正楷書体-PRO';
 }
 
 .container{
@@ -137,4 +138,13 @@ header .container{
     display: inline-block;
     display: table-cell;
     
+}
+.position{
+    margin: 8px auto;
+    text-align: center;
+}
+#map{
+    width: 800px;
+    height: 600px;
+    background-color: white;
 }
