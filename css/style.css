@@ -39,7 +39,12 @@ h2{
     text-align: center;
     font-family: 'HG正楷書体-PRO';
 }
-
+h3{
+    font-size: 30px;
+    font-family: '游明朝';
+    margin-left: 10px;
+    margin-bottom: 0;
+}
 .container{
     max-width: 100%;
     margin: 0 auto;
@@ -147,4 +152,9 @@ header .container{
     width: 800px;
     height: 600px;
     background-color: white;
+}
+.name{
+    margin-top: 0;
+margin-left: 10px;
+font-family: '游明朝';
 }
